@@ -1,0 +1,14 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.4.136:3306/wechart
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+wechart:
+  app-i-d: wxc88957c236a3b987
+  appsecret: d0c466f782362788a9676a061835216e
