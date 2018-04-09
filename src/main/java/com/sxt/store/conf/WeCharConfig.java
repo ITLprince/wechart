@@ -24,7 +24,7 @@ public class WeCharConfig {
     public static final String SEND_MESSAGE="https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=%s";
 
     public static String tokenAccess;
-
+    @Scheduled(fixedRate=1000*60*60*2,initialDelay=2)
     public void getToken(){
         Token tokenObject = restTemplate.getForObject(String.format(URL_TOKEN, appID, appsecret), Token.class);
         if(null!=tokenObject){
